@@ -1,0 +1,16 @@
+.cases {
+	margin-left: 20px;
+	padding-top: 115px;
+	opacity: 0;
+}
+
+@media screen and (min-width: $view-tablet-portrait) {
+
+	.cases {
+		margin-left: 0;
+	}
+
+	.cases {
+		padding-top: 125px;
+	}
+}

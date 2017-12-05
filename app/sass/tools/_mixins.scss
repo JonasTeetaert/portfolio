@@ -1,0 +1,14 @@
+// mixins
+
+@function globalPerc($text-size) {
+	$global: percentage((100 / 16) * $text-size) / 100;
+	@return $global;
+}
+
+@function rem($pxval) {
+	@if (unitless($pxval)) {
+		$pxval: $pxval * 1px;
+	}
+
+	@return $pxval / 16 * 1em;
+}

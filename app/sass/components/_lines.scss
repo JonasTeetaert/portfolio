@@ -1,0 +1,148 @@
+.lines-container {
+	overflow: hidden;
+	min-height: 100vh;
+}
+
+.lines {
+	position: absolute;
+	transform-origin: center center;
+	transition: transform $time-slow ease-in-out;
+}
+
+.lines__cases-title {
+	position: absolute;
+	min-width: 140px;
+	left: 40px;
+    top: -5px;
+    opacity: 0;
+}
+
+.lines__content {
+	position: absolute;
+    left: 20px;
+    top: -16px;
+    min-width: 270px;
+    width: 50%;
+    padding-left: $gutter;
+    opacity: 0;
+}
+
+.lines__cases-link {
+	width: 150px;
+	left: -30px;
+	top: 54vh;
+    position: absolute;
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+// standard values for lines-object
+$line-length: 2000px;
+$vert-pos: 25px;
+$hor-pos: 25px;
+
+$line-size: 20px;
+
+.line-v2,
+.line-h2,
+.line-v1,
+.line-h1 {
+	position: absolute;
+	&:before {
+		content: "";
+		position: absolute;
+	}
+}
+
+.line-h1,
+.line-h2 {
+	z-index: 2;
+	height: $line-size;
+	width: $line-length;
+
+	&:before {
+		height: $line-size;
+		width: 0;
+	}
+}
+
+.line-v1,
+.line-v2 {
+	z-index: 1;
+	width: $line-size;
+	height: $line-length;
+
+	&:before {
+		width: $line-size;
+		height: 0;
+	}
+}
+
+.line-h1,
+.line-v1 {
+	&:before {
+		background-color: $color-primary;
+	}
+}
+
+.line-h2,
+.line-v2 {
+	&:before {
+		background-color: $color-secondary;
+	}
+}
+
+.line-h1 {
+	top: $vert-pos;
+	left: -$hor-pos;
+
+	&:before {
+		left: 0;
+	}
+}
+
+.line-v1 {
+	top: -$line-length;
+
+
+	&:before {
+		bottom: 0;
+	}
+}
+
+.line-h2 {
+	left: -$line-length;
+
+	&:before {
+		right: 0;
+	}
+}
+
+.line-v2 {
+	top: -$vert-pos;
+	left: $hor-pos;
+
+	&:before {
+		top: 0;
+	}
+}
+
+@media screen and (min-width: $view-tablet-landscape) {
+
+	.lines__content {
+		min-width: 310px;
+	}
+}
+
+@media screen and (min-width: $view-desktop) {
+
+
+	.lines__content {
+		min-width: 500px;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,24 @@
+// Colors
+$color-primary: #000000;
+$color-secondary: #FFBC27;
+$color-text: #000000;
+
+// Global font-size 16px
+$text-size: 16; 
+
+// Global margins 20px
+$gutter: 1.25rem;
+
+// Animation
+$time-fast: .2s; 
+$time: .4s; 
+$time-slow: .6s;
+
+// Views for media queries
+$view-tablet-portrait: 30rem; // 480px
+$view-tablet-landscape: 48rem; //768px
+$view-desktop: 60rem; // 960px
+
+// Max witdh
+$min-width: 20rem;
+$max-witdh: 60rem; //960px

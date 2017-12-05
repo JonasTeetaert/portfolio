@@ -1,0 +1,57 @@
+.about {
+	padding-top: $gutter;
+	opacity: 0;
+	margin-top: 45px;
+    margin-bottom: 40px;
+    display: none;
+}
+
+.about__box {
+	margin-right: $gutter * 3;
+	margin-bottom: $gutter;
+
+}
+.about__info,
+.about__img {
+
+	&:last-of-type {
+		margin-bottom: $gutter;
+	}
+}
+
+.about__img {
+	width: 100%;
+
+}
+
+@media screen and (min-width: $view-tablet-landscape) {
+
+
+	.about__box {
+		overflow: hidden;
+		max-width: 670px;
+	}
+
+	.about__info {
+		padding-left: $gutter;
+		width: 70%;
+		float: right;
+		max-width: 480px;
+		margin-bottom: 0;
+
+		&:last-of-type {
+			margin-top: -6px;
+			margin-bottom: 0;
+		}
+	}
+
+	.about__img {
+		width: 30%;
+		float: left;
+
+	}
+
+	.about__contact {
+		float: left;
+	}
+}

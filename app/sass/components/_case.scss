@@ -1,0 +1,42 @@
+.case-img {
+	text-align: center;
+}
+
+.case-img img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.case-nav {
+	text-align: center;
+}
+
+.case-nav li {
+	padding: 0 $gutter;
+}
+
+.case-list {
+	position: relative;
+}
+
+.case-list__item {
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	opacity: 0;
+	transition: opacity $time-slow ease-in-out;
+}
+
+.case-list__item--active {
+	opacity: 1;
+	z-index: 1;
+}
+
+@media screen and (min-width: $view-tablet-landscape) {
+
+	.case-img img {
+		width: 70%;
+	}
+}

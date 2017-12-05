@@ -1,0 +1,52 @@
+// ========================================================
+// GRID
+// ========================================================
+.grid {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.grid > * {
+    margin: 0;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+@media screen and (min-width: $view-tablet-landscape) {
+
+    .grid > * {
+        max-width: 33.333%;
+        flex-basis: 33.333%;
+    }
+
+    .grid__long {
+
+        .panel {
+            height: 100%;
+        }
+    }
+
+    .grid__outer-box {
+        max-width: 66.666%;
+        flex-basis: 66.666%;
+
+        .panel {
+            padding-bottom: 50%;
+        }
+    }
+
+    .grid__inner-box {
+        display: flex;
+    }
+
+    .grid__inner-box > * {
+        max-width: 50%;
+        flex-basis: 50%;
+
+        .panel {
+            padding-bottom: 100%;
+        }
+    }
+
+}
