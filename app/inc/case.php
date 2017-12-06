@@ -29,8 +29,7 @@
 					<img src="assets/images/windows-uitblinkers.jpg" alt="sample">
 					<p><a href="http://uitblinkers.ganda.com/" target="_blank">uitblinkers.ganda.com</a></p>
 				</div>
-				<p>This website lists the Windows standouts, a series of powerful computers, tablets and laptops selected by the makers of Windows them self. For each standout you can see the specifications and where to find it. My contribute was making design changes in function of the content.
-				</p>
+				<p>This website lists the Windows standouts, a series of powerful computers, tablets and laptops selected by the makers of Windows them self. For each standout you can see the specifications and where to find it. My contribute was making design changes in function of the content.</p>
 			</li>
 			<li class="case-list__item">
 				<h2>Microsoft Surface Book</h2>
@@ -46,7 +45,7 @@
 					<img src="assets/images/maggi.jpg" alt="sample">
 					<p><a href="https://maggi.nl/" target="_blank">maggi.nl</a></p>
 				</div>
-				<p>Everybody knows Maggi from the bouillon cubes, well, it has now it’s own website with all kinds of recipes and tips for cooking with  products from Maggi. I helpt building the style guide.</p>
+				<p>Everybody knows Maggi from the bouillon cubes, well, it has now it’s own website with all kinds of recipes and tips for cooking with products from Maggi. I helped building the style guide.</p>
 			</li>
 		</ul>
 		<a class="btn case__link-cases js-link" data-link="3" href="#">view all cases</a>
