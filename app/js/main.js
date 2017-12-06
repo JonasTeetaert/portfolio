@@ -72,6 +72,7 @@ UX.prototype.init = function () {
 } 
 
 UX.prototype.resize = function () {
+	// views
 	if (window.innerWidth < this.mq1) {
 		// mobile
 		this.view = 0;
@@ -85,10 +86,29 @@ UX.prototype.resize = function () {
 		// desktop
 		this.view = 3;
 	}
+
+	// positions
+	if (this.currentPos == 1) {
+		var left;
+		switch (this.view) {
+			case 0: left = "-15px"; break;
+			case 1: case 2: case 3: left = "-45px"; break;
+		}
+		this.linesObject.style.left = left;
+	} if (this.currentPos == 2) {
+		var left; 
+		switch (this.view) {
+			case 0: left = 5; break;
+			case 1: case 2: case 3: left = 15; break;
+		}
+		this.linesObject.style.left = this.sectionInner.clientWidth + left + "px";
+		this.linesObject.style.top = this.case.clientHeight - 75 + "px";
+	}
+
 }
 
 UX.prototype.aboutToggle = function() {
-	console.log(this.currentPos);
+
 	if (this.aboutLink.checked) {
 		if (this.currentPos == 0) {
 			this.fromHomeToAbout();
@@ -138,7 +158,7 @@ UX.prototype.heroAnimation = function () {
 	this.tl0.add([
 		TweenLite.to([lineH1Before,lineH2Before], 4, {cssRule:{ width: "100%"}}),
 		TweenLite.to([lineV1Before,lineV2Before], 4, {cssRule:{ height: "100%"}}),
-		TweenLite.to(this.linesObject, 0, {css:{className: "+=lines--rotate"}, delay: 0.6})
+		TweenLite.to(this.linesObject, 0.1, {css:{className: "+=lines--rotate"}, delay: 0.6})
 		]);
 	this.tl0.add(TweenLite.to([this.heroContent, this.casesLink], 0.6, {opacity: 1, delay: -2.5}));
 }
@@ -152,7 +172,7 @@ UX.prototype.fromHomeToCases = function () {
 
 	// animation
 	this.tl1 = new TimelineLite();
-	this.tl1.to(this.linesObject, 0, {css:{className: "-=lines--rotate"}});
+	this.tl1.to(this.linesObject, 0.1, {css:{className: "-=lines--rotate"}});
 	this.tl1.to([this.heroContent, this.casesLink], 0.5, {opacity: 0, delay: 0.4, ease: Power0.easeNone});
 	this.tl1.addLabel("default")
 	.to(this.lineH1, 0.5, {top: "25px", left: "-25px"}, "default")
@@ -222,7 +242,7 @@ UX.prototype.fromCasesToAbout = function () {
 	this.about.style.display = "block";
 	this.cases.style.display = "none";
 	this.calculateAboutBox();
-	this.tl4 = new TimelineMax();
+	this.tl4 = new TimelineLite();
 	this.tl4.to([this.casesTitle, this.cases], 0.5, {opacity: 0, ease: Power0.easeNone});
 	this.tl4.to(this.linesObject, 0.1, {css:{className: "+=lines--about"}});
 	this.tl4.addLabel("animation")
@@ -301,13 +321,13 @@ Link.prototype.click = function(e) {
 		e.preventDefault();
 	}
 
+	this.scrollToTop();
+
 	switch (parseInt(this.dataLink)) {
 		case 0: 
-		console.log('from Cases To Home');
 		this.ux.fromCasesToHome();
 		break;
 		case 1: 
-		console.log('from home to cases');
 		if (this.ux.aboutLink.checked) {
 			this.ux.fromAboutToCases2();
 		} else {
@@ -315,15 +335,21 @@ Link.prototype.click = function(e) {
 		}
 		break;
 		case 2: 
-		console.log('from cases to case');
 		this.slider.index = parseInt(this.target);
 		this.slider.showItem(this.slider.index);
 		this.ux.fromCasesToCase();
 		break;
 		case 3: 
-		console.log ('from case to cases');
 		this.ux.fromCaseToCases();
 		break;
 		default: console.log('not valid');
 	}
+}
+
+Link.prototype.scrollToTop = function () {
+	window.scroll({
+		top: 0, 
+		left: 0, 
+		behavior: 'smooth' 
+	});
 }
