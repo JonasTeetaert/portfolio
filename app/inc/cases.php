@@ -15,7 +15,7 @@
 				<div class="panel--parent">
 					<a href="#" class="panel js-link" data-link="2" data-target="1" style="background-image: url(assets/images/microsoft-sessies.jpg)">
 						<div class="panel__overlay">
-							<h3>Microsoft Sessies voor business</h3>
+							<h3>Microsoft Sessies for business</h3>
 							<p class="btn">view case</p>
 						</div>
 					</a>
@@ -26,7 +26,7 @@
 					<div class="panel--parent">
 						<a href="#" class="panel js-link" data-link="2" data-target="2" style="background-image: url(assets/images/windows-uitblinkers.jpg)">
 							<div class="panel__overlay">
-								<h3>Windows Uitblinkers</h3>
+								<h3>Windows Outshines</h3>
 								<p class="btn">view case</p>
 							</div>
 						</a>

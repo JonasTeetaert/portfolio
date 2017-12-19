@@ -16,7 +16,7 @@
 				<p>Garden Gourmet is the vegetarian branch from Nestlé, de biggest food company in the world. I was responsible for managing the content for countries like Italy, The Netherlands and Germany. Those content changes required rethinking the site structure.</p>
 			</li>
 			<li class="case-list__item">
-				<h2>Microsoft Sessies voor business</h2>
+				<h2>Microsoft Sessies for business</h2>
 				<div class="case-img">
 					<img src="assets/images/microsoft-sessies.jpg" alt="sample">
 					<p><a href="http://sessies-business.ganda.com/default.aspx" target="_blank">sessies-business.ganda.com</a></p>
@@ -24,7 +24,7 @@
 				<p>Microsoft sessions for business is a platform who informs the Microsoft-user about the newest developments concerning the cloud, big data and helps the user to set up a modern workplace. Together with a colleague, we built this site from top to bottom,  designed a grid-system and used OOP javascript.</p>
 			</li>
 			<li class="case-list__item">
-				<h2>Windows Uitblinkers</h2>
+				<h2>Windows Outshines</h2>
 				<div class="case-img">
 					<img src="assets/images/windows-uitblinkers.jpg" alt="sample">
 					<p><a href="http://uitblinkers.ganda.com/" target="_blank">uitblinkers.ganda.com</a></p>
