@@ -15,7 +15,7 @@
 				<div class="panel--parent">
 					<a href="#" class="panel js-link" data-link="2" data-target="1" style="background-image: url(assets/images/microsoft-sessies.jpg)">
 						<div class="panel__overlay">
-							<h3>Microsoft Sessies for business</h3>
+							<h3>Microsoft Sessions for business</h3>
 							<p class="btn">view case</p>
 						</div>
 					</a>
