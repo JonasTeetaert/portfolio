@@ -62,6 +62,15 @@
 				<div class="content-box panel--no-content"><div class="panel"></div></div>
 			</div>
 		</div>
-		<div class="content-box grid__long panel--no-content"><div class="panel"></div></div>
+		<div class="content-box grid__long">
+			<div class="panel--parent">
+				<a href="#" class="panel js-link" data-link="2" data-target="5" style="background-image: url(assets/images/leap-music.jpg)">
+					<div class="panel__overlay">
+						<h3>Leap Music</h3>
+						<p class="btn">view case</p>
+					</div>
+				</a>
+			</div>
+		</div>
 	</div>
 </section>

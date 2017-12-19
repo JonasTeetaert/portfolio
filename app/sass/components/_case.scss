@@ -2,6 +2,7 @@
 	text-align: center;
 }
 
+.case-img iframe,
 .case-img img {
 	width: 100%;
 	margin: 0 auto;
@@ -36,6 +37,7 @@
 
 @media screen and (min-width: $view-tablet-landscape) {
 
+	.case-img iframe,
 	.case-img img {
 		width: 70%;
 	}
