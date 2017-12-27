@@ -105,6 +105,14 @@ gulp.task('images', function() {
         .pipe(gulp.dest(buildPath + '/assets/images'));
 });
 
+
+// copy everything from leap-music
+gulp.task('leap-music', function() {
+    return gulp
+        .src(srcPath + '/leap-music/**/*')
+        .pipe(gulp.dest(buildPath + '/leap-music/'));
+});
+
 // =============================================================================
 // Copy src fonts to the buildPath folder
 // =============================================================================
@@ -134,7 +142,8 @@ gulp.task('build', function(done) {
         'javascript',
         'json',
         'images',
-        'html'
+        'html',
+        'leap-music'
     ], done);
 });
 

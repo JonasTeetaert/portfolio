@@ -51,6 +51,7 @@
 				<h2>Leap Music</h2>
 				<div class="case-img">
 					<iframe src="https://player.vimeo.com/video/222833250?color=ffffff&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<p><a href="../leap-music/" target="_blank">application</a></p>
 					<p><a href="https://github.com/JonasTeetaert/Final-Work" target="_blank">source code</a></p>
 				</div>
 				<p>For my final work, I made together with a fellow student, an interactive music application. Leap Music works with the Leap Motion controller, a device that registers hand gestures and movements. For working well together, it was important that we wrote or code in an object-oriented way. We used the javascript frameworks <a href="https://threejs.org/" target="_blank">Three.js</a> for the visualization and <a href="https://tonejs.github.io/" target="_blank">Tone.js</a> for creating the sound.</p>
